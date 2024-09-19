@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+        /* .background-image {
+            background-image: url('https://th.bing.com/th/id/R.640e844bb530732eddc7aad67e1935dc?rik=amrsLv1Obrckfg&riu=http%3a%2f%2fwww.michaelchiropractic.com%2fpicts%2fInsurance.jpg&ehk=rEk0bk2pSq5L6xbGUJpkKBgz0BqmIRyK32X%2f85YHl7g%3d&risl=&pid=ImgRaw&r=0');
+            background-size: cover;
+            background-position: center;
+        } */
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-transparent flex justify-between items-center px-6 py-3">
+        <div class="flex items-center space-x-2 fade-in">
+            <div class="w-4 h-4 bg-black rounded-full"></div>
+            <h1 class="text-lg font-medium text-white">Guide</h1>
+        </div>
+       
+       
+        <div class="flex items-center gap-8 font-medium space-x-12 text-xl fade-in text-white">
+            <a class="hover:text-yellow-300" href="index.html">Home</a>
+            <a class="hover:text-yellow-300" href="./about.html">About</a>
+            <a class="hover:text-yellow-300" href="contact.html">Contact Us</a>
+            <a class="hover:text-yellow-300" href="./login.html">Login/Signup</a>
+        </div>
+        
+        
+        <div class="flex items-center space-x-4 social-icons fade-in">
+            <i class="fab fa-facebook text-lg hover:text-yellow-300 cursor-pointer text-white"></i>
+            <i class="fab fa-instagram text-lg hover:text-yellow-300 cursor-pointer text-white"></i>
+            <i class="fas fa-times text-lg cursor-pointer text-white"></i>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <section class="background-image py-12">
+        <div class="container mx-auto bg-white p-8 rounded-lg shadow-lg max-w-lg">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4 text-center">Login</h1>
+            <p class="text-lg text-gray-600 mb-8 text-center">Please fill out the form below to chat with bot.</p>
+
+            <form action="#" method="post" class="space-y-6">
+                <div>
+                    <label for="firstName" class="block text-lg font-medium text-gray-700">Full Name:</label>
+                    <input type="text" id="firstName" name="firstName" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-lg font-medium text-gray-700">Email:</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                </div>
+
+                <div>
+                    <label for="phone" class="block text-lg font-medium text-gray-700">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                </div>
+
+                <div>
+                    <label for="gender" class="block text-lg font-medium text-gray-700">Gender:</label>
+                    <select id="gender" name="gender" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                
+
+                <button type="submit"
+                    class="w-full bg-yellow-400 text-white font-semibold py-2 px-4 rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

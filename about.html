@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #333;
+        }
+
+    
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        
+        @keyframes zoomIn {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        /* Card hover animation */
+        .hover-zoom:hover {
+            animation: zoomIn 0.3s forwards;
+        }
+
+        /* Animation for elements */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Button animation */
+        .btn-hover:hover {
+            background-color: #f59e0b;
+            transform: translateY(-3px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Additional styling for sections */
+        .section-background {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-gray-900">
+
+    <!-- Header -->
+    <header class=" flex justify-between items-center px-6 py-4 shadow-lg">
+        <div class="flex items-center space-x-2 fade-in">
+            <div class="w-6 h-6 bg-black rounded-full"></div>
+            <h1 class="text-xl font-semibold text-white">Guide</h1>
+        </div>
+        <div class="flex items-center gap-8  space-x-12 text-2xl text-white  fade-in">
+            <a class="hover:text-yellow-300" href="index.html">Home</a>
+            <a class="hover:text-yellow-300" href="./about.html">About</a>
+            <a class="hover:text-yellow-300" href="./contact.html">Contact Us</a>
+            <a class="hover:text-yellow-300" href="./login.html">Login/Signup</a>
+        </div>
+        <div class="flex items-center space-x-4 social-icons fade-in">
+            <i class="fab fa-facebook text-xl hover:text-blue-300 cursor-pointer"></i>
+            <i class="fab fa-instagram text-xl hover:text-pink-400 cursor-pointer"></i>
+            <i class="fas fa-times text-xl cursor-pointer"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <div class="section-background mx-auto max-w-4xl fade-in">
+                <h1 class="text-3xl font-bold text-gray-900 text-center mb-8">About Us</h1>
+                <div class="flex flex-col lg:flex-row items-center">
+                    <!-- Left Column -->
+                    <div class="lg:w-1/2 p-6">
+                        <img src="about_us.jpg" alt="About Us Image" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <!-- Right Column -->
+                    <div class="lg:w-1/2 p-6">
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h2>
+                        <p class="text-gray-700 mb-4">At Solutioneers, our mission is to revolutionize education in Rajasthan by providing cutting-edge AI solutions. Our goal is to make the admission process seamless, efficient, and accessible for everyone.</p>
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Our Team</h2>
+                        <p class="text-gray-700 mb-4">Our team is a diverse group of professionals passionate about technology and education. We bring together expertise in AI, software development, and educational methodologies to create impactful solutions.</p>
+                        <a href="./contact.html" class="bg-yellow-400 text-gray-800 font-semibold py-2 px-6 rounded-full mt-6 hover:bg-yellow-500 btn-hover">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

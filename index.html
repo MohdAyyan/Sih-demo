@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Enquiries with Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Gradient Background */
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #333;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Zoom animation for hover effect */
+        @keyframes zoomIn {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        
+        .hover-zoom:hover {
+            animation: zoomIn 0.3s forwards;
+        }
+
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        
+        .social-icons i:hover {
+            color: #feb47b;
+        }
+
+        
+        .btn-hover:hover {
+            background-color: #f59e0b;
+            transform: translateY(-3px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+       
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-gray-900">
+
+    <!-- Header Start Yaha sea -->
+    <header class="bg-transparent flex justify-between items-center px-6 py-3">
+        <div class="flex items-center space-x-2 fade-in">
+            <div class="w-4 h-4 bg-black rounded-full"></div>
+            <h1 class="text-lg font-medium text-white">Guide</h1>
+        </div>
+        <div class="flex items-center gap-8 font-medium space-x-12 text-xl fade-in text-white">
+            <a class="hover:text-yellow-300" href="index.html">Home</a>
+            <a class="hover:text-yellow-300" href="./about.html">About</a>
+            <a class="hover:text-yellow-300" href="contact.html">Contact Us</a>
+            <a class="hover:text-yellow-300" href="./login.html">Login/Signup</a>
+        </div>
+        <div class="flex items-center space-x-4 social-icons fade-in">
+            <i class="fab fa-facebook text-lg hover:text-yellow-300 cursor-pointer text-white"></i>
+            <i class="fab fa-instagram text-lg hover:text-yellow-300 cursor-pointer text-white"></i>
+            <i class="fas fa-times text-lg cursor-pointer text-white"></i>
+        </div>
+    </header>
+
+    <!-- Header End -->
+
+    <!-- Main Section -->
+    <section class="relative flex flex-col items-center justify-center h-screen bg-opacity-70 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?education,technology');">
+        <div class="flex flex-col items-center text-center p-8 bg-white bg-opacity-80 rounded-lg shadow-lg fade-in">
+            <div class="relative p-8 shadow-lg transform transition-all duration-300 hover:scale-105" style="width: 400px; height: 200px;">
+                <div class="absolute top-0 left-10 transform -translate-y-1/2">
+                    <img class="h-[250px] rounded-lg" src="https://plus.unsplash.com/premium_photo-1677094310956-7f88ae5f5c6b?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tape used to attach paper background">
+                </div>
+            </div>
+            <h1 class="text-4xl font-bold text-gray-900 mt-6 fade-in">Transform Enquiries with Tech</h1>
+            <p class="text-gray-700 mt-4 max-w-xl fade-in">Empower education in Rajasthan with our 24/7 AI chatbot, simplifying student queries for a seamless admission process.</p>
+            <button class="bg-yellow-400 text-gray-800 font-semibold py-2 px-6 rounded-full mt-6 hover:bg-yellow-500 btn-hover">Chat Now</button>
+        </div>
+    </section>
+    <!-- Main Section End-->
+
+    <!-- Core Packages Section -->
+    
+    <section class="container mx-auto py-12 fade-in">
+        <h1 class="text-3xl font-bold text-gray-900 text-center mb-8 fade-in">Core Packages</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- First Package -->
+            <div class="relative bg-white shadow-lg card hover-zoom fade-in rounded-lg overflow-hidden">
+                <div class="bg-neutral-300 p-8">
+                    <img src="chatbot_24hour_support.png" alt="Taped background for package" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="bg-black text-white p-6">
+                    <h2 class="text-lg font-bold">24/7 AI Chatbot Support</h2>
+                    <p class="text-sm mt-2">Our chatbot provides round-the-clock assistance, answering common queries quickly and accurately.</p>
+                </div>
+            </div>
+
+           
+           
+            <!-- Second Package -->
+            <div class="relative bg-white shadow-lg card hover-zoom fade-in rounded-lg overflow-hidden">
+                <div class="bg-neutral-300 p-8">
+                    <img src="Comprehensive_acess.png" alt="Taped background for package" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="bg-black text-white p-6">
+                    <h2 class="text-lg font-bold">Comprehensive Information Access</h2>
+                    <p class="text-sm mt-2">Get detailed info on admissions, fees, scholarships, and more from a centralized database.</p>
+                </div>
+            </div>
+
+           
+           
+            <!-- Third Package -->
+            <div class="relative bg-white shadow-lg card hover-zoom fade-in rounded-lg overflow-hidden">
+                <div class="p-8">
+                    <img src="chat bot replies.jpg" alt="Desk with paper, pencil, and laptop" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="bg-black text-white p-6">
+                    <h2 class="text-lg font-bold">Reduced Staff Workload</h2>
+                    <p class="text-sm mt-2">Automates replies to FAQs, allowing department staff to focus on complex and urgent tasks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
